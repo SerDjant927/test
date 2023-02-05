@@ -1,39 +1,17 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Это тест с нуля, проверка"/>
+  <div class="page" id="app">
+    <HeaderBlock></HeaderBlock>
   </div>
 
 </template>
 
 <script>
 
-import HelloWorld from './components/HelloWorld.vue'
-
+import HeaderBlock from './components/HeaderBlock.vue'
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    HeaderBlock
   }
 }
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-
-body {
-  min-height: 100vh;
-  width: 100%;
-  background-color: #222222;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-</style>
