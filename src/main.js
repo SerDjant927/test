@@ -2,7 +2,7 @@ import "./styles/normalize.css";
 import "./styles/style.less";
 import Vue from 'vue'
 import App from './App.vue'
-
+window.$ = window.jQuery = require('jquery');
 Vue.config.productionTip = false
 
 new Vue({
