@@ -4,7 +4,7 @@
       <h2 class="info__headline">Express delivery market revolution</h2>
       <p class="info__subtitle">Express courier service in the city. We are a reliable logistics partner for delivery services for online stores and restaurants!</p>
       <div class="info-blocks">
-        <div class="info-blocks__item block-item">
+        <a href="javascript:void(0);" class="info-blocks__item block-item">
           <h4 class="block-item__title">Become a Courier</h4>
           <div class="block-item__img-block block-item__img-block_bg">
             <div class="block-item__img">
@@ -20,8 +20,8 @@
           <div class="block-item__text">
             You choose a schedule. You decide how much and when to earn. Earnings from day one
           </div>
-        </div>
-        <div class="info-blocks__item block-item">
+        </a>
+        <a href="javascript:void(0);" class="info-blocks__item block-item">
           <h4 class="block-item__title">Help & Support</h4>
           <div class="block-item__img-block">
             <div class="block-item__img">
@@ -35,8 +35,8 @@
             Door-to-door delivery<br/>
             in 90 minutes or at your<br/> convenience
           </div>
-        </div>
-        <div class="info-blocks__item block-item">
+        </a>
+        <a href="javascript:void(0);" class="info-blocks__item block-item">
           <h4 class="block-item__title">Affiliate Program</h4>
           <div class="block-item__img-block">
             <div class="block-item__img">
@@ -51,7 +51,7 @@
             Use our service and feel<br/>
             new quality of this traditional<br/> service!
           </div>
-        </div>
+        </a>
       </div>
     </div>
     <div class="dividing-block">

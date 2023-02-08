@@ -10,6 +10,7 @@ a, button, input, div, textarea{
 }
 
 .page{
+  font-family: 'Intro Book', sans-serif;
   overflow: hidden;
   background-color: #fff;
 }
@@ -158,7 +159,7 @@ a, button, input, div, textarea{
     align-items: center;
     justify-content: center;
     column-gap: 6px;
-    font-family: Intro Book, sans-serif;
+    font-family: 'Intro Book', sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
@@ -197,7 +198,7 @@ main{
     }
     &__headline{
       margin:0;
-      font-family: 'Intro Bold', sans-serif;
+      font-family: 'Intro Book', sans-serif;
       font-size: 40px;
       font-weight: 700;
       line-height: 48px;
@@ -215,7 +216,7 @@ main{
       display: flex;
       align-items: center;
       column-gap: 8px;
-      font-family: 'Intro Regular', sans-serif;
+      font-family: 'Intro Book', sans-serif;
       font-size: 18px;
       font-weight: 400;
       line-height: 24px;
@@ -346,6 +347,8 @@ main{
     margin-top: auto;
     color:#1D253C;
     opacity: 0.48;
+    font-size: 12px;
+    font-weight: 400;
   }
   &_active{
     background-color: #fff;
@@ -453,7 +456,7 @@ main{
     }
   }
   &__descr{
-    font-family: 'Intro Bold', sans-serif;
+    font-family: 'Intro Book', sans-serif;
     font-size: 12px;
     font-weight: 700;
     line-height: 16px;
@@ -477,7 +480,7 @@ main{
     justify-content: center;
     padding: 8px;
     color: #fff;
-    font-family: 'Intro Regular', sans-serif;
+    font-family: 'Intro Book', sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 32px;
@@ -569,7 +572,7 @@ main{
   }
   &__headline{
     margin: 0;
-    font-family: 'Intro Bold', sans-serif;
+    font-family: 'Intro Book', sans-serif;
     font-size: 40px;
     font-weight: 700;
     line-height: 48px;
@@ -596,12 +599,15 @@ main{
     width: 100%;
     height: 280px;
     background-color: #F8FAFF;
+    &:hover{
+      background-color: #fff;
+    }
   }
 }
 
 .block-item{
   &__title{
-    font-family: 'Intro Regular', sans-serif;
+    font-family: 'Intro Book', sans-serif;
     font-size: 22px;
     font-weight: 400;
     line-height: 32px;
@@ -683,7 +689,7 @@ main{
 }
 
 .global-title{
-  font-family: 'Intro Bold', sans-serif;
+  font-family: 'Intro Book', sans-serif;
   font-size: 40px;
   font-weight: 700;
   line-height: 48px;
@@ -743,7 +749,7 @@ main{
   .slider__list{
     display: flex;
     flex-wrap: nowrap;
-    width: max-content;
+    //width: max-content;
     column-gap: 88px;
   }
 }
@@ -788,7 +794,7 @@ main{
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    font-family: 'Intro Regular', sans-serif;
+    font-family: 'Intro Book', sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 32px;
@@ -817,7 +823,7 @@ main{
   }
   &__title{
     margin: 31px 0 0 0;
-    font-family: 'Intro Regular', sans-serif;
+    font-family: 'Intro Book', sans-serif;
     font-size: 22px;
     font-weight: 400;
     line-height: 32px;
@@ -920,8 +926,219 @@ main{
     background-color: #fff;
     border-radius: 100%;
   }
-
 }
+
+.footer{
+  padding:85px 0 56px;
+  width: 100%;
+  background-color: #F8FAFF;
+}
+
+.footer-columns{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: space-between;
+  column-gap: 60px;
+  flex-wrap: nowrap;
+  &__headline{
+    margin: 0;
+    padding-bottom: 9px;
+    position: relative;
+    font-family: 'Intro Book', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    text-transform: uppercase;
+    display: flex;
+    margin-bottom: 21px;
+    &:after{
+      content: '';
+      bottom: 0px;
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      background:linear-gradient(0deg, #B7C6E7, #B7C6E7), #C2D2F4;
+      border-radius: 1px;
+    }
+  }
+  &__text{
+    font-family: 'Intro Book', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #1D253C;
+    opacity: 0.64;
+    width: 240px;
+    max-width: 100%;
+    position: relative;
+    top: 3px;
+  }
+  &__block{
+    display: flex;
+    flex-direction: column;
+    &:first-of-type{
+      .footer-columns__headline{
+        &:after{
+          display: none;
+        }
+      }
+    }
+  }
+  &__elem{
+    &_grid{
+      display: grid;
+      grid-template-columns: 46px 1fr;
+      column-gap: 16px;
+    }
+  }
+  &__tel-link{
+    font-family: 'Intro Book', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #1D253C;
+  }
+  &__link-list{
+    padding:0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+  }
+  &__link-item{
+    font-family: 'Intro Book', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  &__link{
+    color: #1D253C;
+    opacity: 0.64;
+  }
+}
+
+.socials{
+  margin-top: 58px;
+  display: flex;
+  align-items: center;
+  column-gap: 24px;
+  flex-wrap: nowrap;
+  &__link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2B6BF3;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+  }
+}
+
+.address{
+  margin-top: 24px;
+  display: grid;
+  grid-template-columns: 16px 1fr;
+  column-gap: 12px;
+  &__block{
+    font-family: 'Intro Book', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #1D253C;
+    opacity: 0.64;
+    svg{
+      position: relative;
+      top: 2px;
+    }
+  }
+}
+
+
+.divine-block{
+  display: flex;
+  width: 100%;
+  position: relative;
+  margin-top: 30px;
+  align-items: center;
+  justify-content: center;
+  &__line{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 2px;
+    background: linear-gradient(0deg, #B7C6E7, #B7C6E7), #C2D2F4;
+    opacity: 0.72;
+  }
+  &__text{
+    font-family: "Intro Book", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #C2D2F4;
+    position: relative;
+    z-index: 2;
+    padding: 14px;
+    background-color: #F8FAFF;
+  }
+}
+
+.footer-policy-block{
+  width: 1012px;
+  max-width: 100%;
+  margin-top: 24px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  .copyright{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #1D253C;
+    opacity: 0.64;
+    display: flex;
+    height: max-content;
+    position: absolute;
+    left: 0;
+  }
+  .developer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+  }
+  .policy{
+    position: absolute;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: max-content;
+    column-gap: 13px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #1D253C;
+    span{
+      opacity: 0.64;
+    }
+  }
+}
+
+
 
 @media(max-width: 1380px){
   .container{
