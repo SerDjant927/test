@@ -69,7 +69,8 @@
             <path d="M3.75 25C3.75 23.9645 4.58947 23.125 5.625 23.125H7.5C8.53553 23.125 9.375 23.9645 9.375 25C9.375 26.0355 8.53553 26.875 7.5 26.875H5.625C4.58947 26.875 3.75 26.0355 3.75 25Z" fill="#2B6BF3"/>
           </svg>
         </a>
-        <a href="javascript:void(0);" class="burger-btn">
+
+        <a href="javascript:void(0);" class="burger-btn js-burger-btn">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M9 17C9 16.4477 9.44772 16 10 16H20C20.5523 16 21 16.4477 21 17C21 17.5523 20.5523 18 20 18H10C9.44772 18 9 17.5523 9 17Z" fill="#C2D2F4"/>
             <path d="M9 17C9 16.4477 9.44772 16 10 16H20C20.5523 16 21 16.4477 21 17C21 17.5523 20.5523 18 20 18H10C9.44772 18 9 17.5523 9 17Z" fill="#B7C6E7"/>
@@ -91,4 +92,8 @@ export default {
   name: 'HeaderBlock',
 
 }
+</script>
+
+<script>
+
 </script>
