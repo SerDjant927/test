@@ -1,7 +1,7 @@
 <template>
   <div class="container container_info">
     <div class="info">
-      <h2 class="info__headline">Express delivery market revolution</h2>
+      <h2 class="info__headline">Express delivery<br/> market revolution</h2>
       <p class="info__subtitle">Express courier service in the city. We are a reliable logistics partner for delivery services for online stores and restaurants!</p>
       <div class="info-blocks">
         <a href="javascript:void(0);" class="info-blocks__item block-item">
