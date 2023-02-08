@@ -141,6 +141,7 @@
               <span>Privacy policy</span>
             </a>
           </div>
+
         </div>
 
       </div>
