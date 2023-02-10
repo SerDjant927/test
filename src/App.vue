@@ -3,6 +3,7 @@
     <HeaderBlock>
     </HeaderBlock>
     <main>
+
       <MainBlock></MainBlock>
       <infoBlock></infoBlock>
       <PartnersBlock></PartnersBlock>
@@ -22,6 +23,9 @@ import PartnersBlock from './components/PartnersBlock.vue'
 import WhatWeDo from './components/WhatWeDo.vue'
 import PaymentMethods from './components/PaymentMethods.vue'
 import FooterBlock from './components/FooterBlock.vue'
+//import VueSlickCarousel from 'vue-slick-carousel'
+import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
+
 export default {
   name: 'App',
   components: {
@@ -33,5 +37,7 @@ export default {
     PaymentMethods,
     FooterBlock,
   }
+
 }
+
 </script>

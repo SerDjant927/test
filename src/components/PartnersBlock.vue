@@ -12,25 +12,34 @@
           <span>Let's collaborate</span>
         </a>
       </div>
-      <div class="partners__main partners-slider">
-        <div class="slider__list">
-          <a href="javascript:void(0);" class="slider__item partners-slider__item">
-            <img src="../assets/partners.png" alt="slider-img">
-          </a>
-          <a href="javascript:void(0);" class="slider__item partners-slider__item">
-            <img src="../assets/partners.png" alt="slider-img">
-          </a>
-          <a href="javascript:void(0);" class="slider__item partners-slider__item">
-            <img src="../assets/partners.png" alt="slider-img">
-          </a>
-          <a href="javascript:void(0);" class="slider__item partners-slider__item">
-            <img src="../assets/partners.png" alt="slider-img">
-          </a>
-          <a href="javascript:void(0);" class="slider__item partners-slider__item">
-            <img src="../assets/partners.png" alt="slider-img">
-          </a>
-        </div>
+<!--      <div class="partners__main partners-slider">-->
+<!--        <div class="slider__list">-->
+<!--          <a href="javascript:void(0);" class="slider__item partners-slider__item">-->
+<!--            <img src="../assets/partners.png" alt="slider-img">-->
+<!--            <img src="../assets/partners_light.svg" alt="slider-img">-->
+<!--          </a>-->
+<!--          <a href="javascript:void(0);" class="slider__item partners-slider__item">-->
+<!--            <img src="../assets/partners.png" alt="slider-img">-->
+<!--            <img src="../assets/partners_light.svg" alt="slider-img">-->
+<!--          </a>-->
+<!--          <a href="javascript:void(0);" class="slider__item partners-slider__item">-->
+<!--            <img src="../assets/partners.png" alt="slider-img">-->
+<!--            <img src="../assets/partners_light.svg" alt="slider-img">-->
+<!--          </a>-->
+<!--          <a href="javascript:void(0);" class="slider__item partners-slider__item">-->
+<!--            <img src="../assets/partners.png" alt="slider-img">-->
+<!--            <img src="../assets/partners_light.svg" alt="slider-img">-->
+<!--          </a>-->
+<!--          <a href="javascript:void(0);" class="slider__item partners-slider__item">-->
+<!--            <img src="../assets/partners.png" alt="slider-img">-->
+<!--            <img src="../assets/partners_light.svg" alt="slider-img">-->
+<!--          </a>-->
+<!--        </div>-->
+<!--      </div>-->
+      <div class="slider-container">
+        <TestCarousel></TestCarousel>
       </div>
+
       <a href="javascript:void(0);" class="partners__btn partners__btn_mob">
         <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M11 11H6V10L0 8.5V14.2633C0 15.224 0.751579 16 1.68211 16H15.3179C16.2484 16 17 15.224 17 14.2633V8.5L11 10V11Z" fill="#FD466E"/>
@@ -44,8 +53,13 @@
 </template>
 
 <script>
+import TestCarousel from "@/components/PartnersCarousel.vue";
+
 export default {
   name: 'PartnersBlock',
+  components:{
+    TestCarousel,
+  }
 
 }
 </script>

@@ -1,5 +1,4 @@
 <template>
-  <div>
     <div class="container container_main">
     <section class="main">
       <div class="main-block">
@@ -16,11 +15,9 @@
         </a>
         <div data-slider="demo" class="demo-slider">
           <h3 class="demo-slider__title">How it works</h3>
-          <div class="slider__list">
-            <a href="javascript:void(0);" class="slider__item">
-              <img src="../assets/slider-video.png" alt="slider-img">
-              <img src="../assets/play-btn.svg" alt="play-btn" class="play-btn">
-            </a>
+          <div class="slider__list slider__list_video" >
+            <VideoCarousel></VideoCarousel>
+
           </div>
         </div>
       </div>
@@ -36,13 +33,16 @@
                   <path d="M11 7C11 6.44772 11.4477 6 12 6C12.5523 6 13 6.44772 13 7C13 7.55228 12.5523 8 12 8C11.4477 8 11 7.55228 11 7Z" fill="white"/>
                 </svg>
               </a>
-              <div class="tooltip-text"></div>
+              <div class="tooltip-text">
+                A commission is a piece of work that someone is asked to do and is paid for.
+              </div>
             </div>
           </div>
+
           <div  class="tabs-block__main">
             <form action="" class="tabs-form js-tabs-container">
               <div class="tabs-form__btns">
-                <a href="javascript:void(0);" class="tabs-btn js-tab-btn">
+                <a @click="setActiveTab('tab1')" href="javascript:void(0);" class="tabs-btn js-tab-btn">
                   <div class="tabs-btn__block">
                     <div class="tabs-btn__img tabs-btn__img_double">
                       <svg width="30" height="20" viewBox="0 0 30 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -66,7 +66,7 @@
                     <div class="tabs-btn__text">up to 10lb</div>
                   </div>
                 </a>
-                <a href="javascript:void(0);" class="tabs-btn tabs-btn_active js-tab-btn">
+                <a @click="setActiveTab('tab2')" href="javascript:void(0);" class="tabs-btn tabs-btn_active js-tab-btn">
                   <div class="tabs-btn__block">
                     <div class="tabs-btn__img">
                       <svg width="48" height="30" viewBox="0 0 48 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -80,7 +80,7 @@
                     <div class="tabs-btn__text">up to 130lb</div>
                   </div>
                 </a>
-                <a href="javascript:void(0);" class="tabs-btn js-tab-btn">
+                <a @click="setActiveTab('tab3')" href="javascript:void(0);" class="tabs-btn js-tab-btn">
                   <div class="tabs-btn__block">
                     <div class="tabs-btn__img">
                       <svg width="38" height="26" viewBox="0 0 38 26" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -94,11 +94,12 @@
                     <div class="tabs-btn__text">up to 130lb</div>
                   </div>
                 </a>
-
               </div>
               <div class="tabs-form__content">
-                <div class="tabs-form__block"></div>
-                <div class="tabs-form__block tabs-form__block_active">
+                <div v-if="activeTab === 'tab1'" class="tabs-form__block">
+                  <h2>Tab N1</h2>
+                </div>
+                <div v-if="activeTab === 'tab2'" class="tabs-form__block tabs-form__block_active">
                   <div class="input-container input-container_grid">
                     <div class="input-container__elem">
                       <div class="input-container__img">
@@ -122,11 +123,12 @@
                     <div class="input-container__elem">
                       <label for="" class="input-container__label">
                         <span class="input-container__descr">Pickup location</span>
-                        <input type="text" placeholder="location">
+                        <input type="text" v-model="location1" placeholder="location">
+
                       </label>
                       <label for="" class="input-container__label">
                         <span class="input-container__descr">Drop location</span>
-                        <input type="text" placeholder="location">
+                        <input type="text" v-model="location2" placeholder="location">
                       </label>
                     </div>
                   </div>
@@ -134,7 +136,7 @@
                     <a href="javascript:void(0);" class="submit-block__btn">
                       <span>Order</span>
                     </a>
-                    <a href="javascript:void(0);" class="submit-block__btn submit-block__btn_transparent">
+                    <a @click="resetInput" href="javascript:void(0);" class="submit-block__btn submit-block__btn_transparent">
                       <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M0.276314 0.269411C-0.0921045 0.628626 -0.0921046 1.21103 0.276314 1.57024L2.76841 4.00008L0.276486 6.42976C-0.0919318 6.78897 -0.0919317 7.37137 0.276486 7.73059C0.644904 8.0898 1.24223 8.0898 1.61065 7.73059L4 5.40092L6.38935 7.73059C6.75777 8.0898 7.3551 8.0898 7.72351 7.73059C8.09193 7.37137 8.09193 6.78897 7.72351 6.42976L5.23159 4.00008L7.72369 1.57024C8.0921 1.21103 8.0921 0.628626 7.72369 0.269411C7.35527 -0.0898037 6.75794 -0.0898037 6.38953 0.269411L4 2.59924L1.61047 0.269411C1.24206 -0.0898037 0.644732 -0.0898037 0.276314 0.269411Z" fill="#C4C4C4"/>
                       </svg>
@@ -142,7 +144,9 @@
                     </a>
                   </div>
                 </div>
-                <div class="tabs-form__block"></div>
+                <div v-if="activeTab === 'tab3'" class="tabs-form__block">
+                  <h2>Tab N3</h2>
+                </div>
 
               </div>
             </form>
@@ -160,17 +164,41 @@
           </label>
         </form>
       </div>
-
     </section>
     </div>
 
 
-  </div>
 </template>
 
 <script>
+import VideoCarousel from "@/components/VideoCarousel.vue";
+
 export default {
   name: 'MainBlock',
+  components: {
+    VideoCarousel,
+  },
+  data() {
+    return {
+      location1: "",
+      location2: "",
+      activeTab: "tab2",
 
+    };
+
+  },
+
+  methods: {
+    resetInput() {
+      this.location1 = "";
+      this.location2= "";
+    },
+    setActiveTab(newTab) {
+      this.activeTab = newTab;
+    }
+  },
 }
+
+
+
 </script>
