@@ -17,7 +17,7 @@
         <img src="../assets/slider-video.png" alt="slider-img">
         <img src="../assets/play-btn.svg" alt="play-btn" class="play-btn">
       </a>
-      <a href="javascript:void(0);" class="slider__item slider__item_video">
+      <a  class="slider__item slider__item_video">
         <img src="../assets/slider-video.png" alt="slider-img">
         <img src="../assets/play-btn.svg" alt="play-btn" class="play-btn">
       </a>

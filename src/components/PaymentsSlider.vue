@@ -46,7 +46,7 @@ export default {
     return {
       settings: {
         "infinite": true,
-        "centerMode": false,
+        "centerMode": true,
         "dots":false,
         "centerPadding": "0px",
         "slidesToShow": 1,

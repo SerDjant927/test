@@ -1,5 +1,5 @@
 @font-face {
-    font-family: 'Intro Book';
+    font-family: 'Intro Bold';
     src: url('../fonts/intro-bold-webfont.eot');
     src: url('../fonts/intro-bold-webfont.eot?#iefix') format('embedded-opentype'),
     url('../fonts/intro-bold-webfont.woff2') format('woff2'),
@@ -25,7 +25,7 @@
 
 
 @font-face {
-    font-family: 'Intro Book';
+    font-family: 'Intro Book Italic';
     src: url('../fonts/intro-book-italic-webfont.eot');
     src: url('../fonts/intro-book-italic-webfont.eot?#iefix') format('embedded-opentype'),
     url('../fonts/intro-book-italic-webfont.woff2') format('woff2'),
@@ -38,7 +38,7 @@
 
 
 @font-face {
-    font-family: 'Intro Book';
+    font-family: 'Intro Book Light';
     src: url('../fonts/intro-light-webfont.eot');
     src: url('../fonts/intro-light-webfont.eot?#iefix') format('embedded-opentype'),
     url('../fonts/intro-light-webfont.woff2') format('woff2'),
@@ -51,7 +51,7 @@
 
 
 @font-face {
-    font-family: 'Intro Book';
+    font-family: 'Intro Regular';
     src: url('../fonts/intro-regular-webfont.eot');
     src: url('../fonts/intro-regular-webfont.eot?#iefix') format('embedded-opentype'),
     url('../fonts/intro-regular-webfont.woff2') format('woff2'),

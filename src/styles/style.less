@@ -26,6 +26,8 @@ a, button, input, div, textarea{
   background-color: #fff;
 }
 
+
+
 #app{
   display: flex;
   flex-direction: column;
@@ -39,16 +41,19 @@ a, button, input, div, textarea{
   display: flex;
   width: 100%;
   border-bottom: 1px solid #2B6BF316;
+  height: 80px;
   &__block{
     display: flex;
     align-items: center;
     justify-content: center;
     &_logo{
       column-gap: 68px;
+      margin-right: 169px;
     }
     &_tracker{
       display: flex;
       width: 184px;
+      margin-right: 211px;
       max-width: 100%;
       height: 40px;
     }
@@ -101,6 +106,19 @@ a, button, input, div, textarea{
   }
 }
 
+
+.main-block{
+  &_tabs{
+    padding-top: 0;
+  }
+  &__headline{
+    font-family: 'Intro Bold', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+  }
+}
+
 .personal-link{
   &_text{
     font-family: 'Intro Book', sans-serif;
@@ -109,12 +127,14 @@ a, button, input, div, textarea{
     line-height: 24px;
     color: #666666;
     margin-right: 36px;
-    &:last-of-type{
-      margin-right: 0;
+    display: flex;
+    width: max-content;
+    &:nth-child(2){
+      margin-right: 32px;
     }
   }
   &_btn{
-    margin-left: 32px;
+    //margin-left: 32px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -146,25 +166,28 @@ a, button, input, div, textarea{
     background: url("../assets/main-bg.svg");
     background-color: #F8FAFF;
     background-size: 657px 712px;
-    background-position: bottom center;
+    background-position: 679px 67px;
     background-repeat: no-repeat;
     padding-bottom: 32px;
     padding-top: 36px;
   }
   &_info{
-    margin-top: 98px;
+    margin-top: 90px;
     background-color: #fff;
     display: flex;
     flex-direction: column;
   }
   &_what-do{
-    margin-top: 47px;
+    margin-top: 6px;
     width: 100%;
     background: url("../assets/what-do-bg.svg");
     background-position: center right;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+  }
+  &_footer{
+    width: 1160px;
   }
   &_payment{
     display: flex;
@@ -178,6 +201,7 @@ a, button, input, div, textarea{
     display: flex;
     align-items: center;
     justify-content: center;
+    width: max-content;
     column-gap: 6px;
     font-family: 'Intro Book', sans-serif;
     font-size: 16px;
@@ -217,20 +241,19 @@ main{
     max-width: 100%;
     padding-top: 36px;
     &:first-of-type{
-      padding-top: 66px;
+      padding-top: 20px;
       width: 375px;
       max-width: 100%;
     }
     &__headline{
       margin:0;
-      font-family: 'Intro Book', sans-serif;
       font-size: 40px;
       font-weight: 700;
       line-height: 48px;
       color: #1D253C;
     }
     &__descr{
-      margin: 34px 0 30px 0;
+      margin: 34px 0 34px 0;
       font-family: 'Intro Book', sans-serif;
       font-size: 16px;
       font-weight: 400;
@@ -248,13 +271,16 @@ main{
       text-decoration: none;
       color: #2B6BF3;
     }
+    &_tabs{
+      padding-top: 0;
+    }
   }
 }
 
 .demo-slider{
   display: flex;
   flex-direction: column;
-  margin-top: 80px;
+  margin-top: 86px;
   &__title{
     font-size: 22px;
     font-weight: 400;
@@ -320,6 +346,8 @@ main{
     display: flex;
     align-items: center;
     column-gap: 16px;
+    position: relative;
+    top: -7px;
   }
   &__headline{
     margin: 0;
@@ -327,6 +355,8 @@ main{
     font-weight: 400;
     line-height: 32px;
     color: #1D253C;
+    font-family: "Intro Regular", sans-serif;
+    position: relative;
   }
 }
 
@@ -378,7 +408,7 @@ main{
   display: flex;
   flex-direction: column;
   &__btns{
-    margin-top: 31px;
+    margin-top: 20px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 
@@ -391,6 +421,7 @@ main{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
   padding: 8px;
   background-color: #EFF4FF;
   border: 1px solid #B7C6E7;
@@ -428,6 +459,7 @@ main{
     position: relative;
   }
   &__text{
+    text-align: center;
     margin-top: auto;
     color:#1D253C;
     opacity: 0.48;
@@ -475,7 +507,7 @@ main{
       display: flex;
       flex-direction: column;
       height: 100%;
-      justify-content: space-between;
+      justify-content: flex-end;
       align-items: center;
     }
   }
@@ -581,7 +613,7 @@ main{
   position: relative;
   border-radius: 8px;
   overflow: hidden;
-  margin-top: 72px;
+  margin-top: 60px;
   box-shadow: 0px 8px 16px 0px #00000014;
   background-color: #FFDD2D;
   display: flex;
@@ -663,7 +695,7 @@ main{
   }
   &__headline{
     margin: 0;
-    font-family: 'Intro Book', sans-serif;
+    font-family: 'Intro Bold', sans-serif;
     font-size: 40px;
     font-weight: 700;
     line-height: 48px;
@@ -684,6 +716,7 @@ main{
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 50px;
   &__item{
+    cursor: pointer;
     display: flex;
     flex-direction: column;
     padding: 24px;
@@ -704,7 +737,7 @@ main{
     font-family: 'Intro Book', sans-serif;
     font-size: 22px;
     font-weight: 400;
-    line-height: 32px;
+    line-height: 22px;
     margin: 0;
     color: #1D253C;
   }
@@ -721,6 +754,7 @@ main{
   &__img-block{
     display: flex;
     width: 100%;
+    padding-left: 8px;
     margin-top: 17px;
     &_bg{
       background: url("../assets/route-bg.svg");
@@ -755,7 +789,7 @@ main{
 
 
 .dividing-block{
-  padding: 82px 0;
+  padding: 82px 0 106px;
   height: 32px;
   display: flex;
   width: 100vw;
@@ -783,7 +817,7 @@ main{
 }
 
 .global-title{
-  font-family: 'Intro Book', sans-serif;
+  font-family: 'Intro Bold', sans-serif;
   font-size: 40px;
   font-weight: 700;
   line-height: 48px;
@@ -813,7 +847,7 @@ main{
   }
   &__btn{
     position: absolute;
-    right: 0;
+    right: 69px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -861,7 +895,7 @@ main{
     width: 100%;
     max-width: 100vw;
     overflow: hidden;
-    margin: 34px 0;
+    margin: 74px 0 34px;
     .slick-slide{
       width: 188px;
       margin-right: 20px;
@@ -1126,7 +1160,7 @@ main{
 }
 
 .footer{
-  padding:85px 0 56px;
+  padding:90px 0 56px;
   width: 100%;
   background-color: #F8FAFF;
 }
@@ -1141,13 +1175,15 @@ main{
     margin: 0;
     padding-bottom: 9px;
     position: relative;
-    font-family: 'Intro Book', sans-serif;
+    font-family: 'Intro Bold', sans-serif;
     font-size: 14px;
     font-weight: 700;
     line-height: 16px;
     text-transform: uppercase;
+    letter-spacing:;
     display: flex;
     margin-bottom: 21px;
+    letter-spacing: 0.08em;
     &:after{
       content: '';
       bottom: 0px;
@@ -1175,6 +1211,7 @@ main{
     flex-direction: column;
     &:first-of-type{
       .footer-columns__headline{
+        padding-left: 61px;
         &:after{
           display: none;
         }
@@ -1253,13 +1290,11 @@ main{
     }
   }
 }
-
-
 .divine-block{
   display: flex;
   width: 100%;
   position: relative;
-  margin-top: 30px;
+  margin-top: 7px;
   align-items: center;
   justify-content: center;
   &__line{
@@ -1293,7 +1328,7 @@ main{
 .footer-policy-block{
   width: 1012px;
   max-width: 100%;
-  margin-top: 24px;
+  margin-top: -3px;
   margin-left: auto;
   margin-right: auto;
   display: flex;
@@ -1399,6 +1434,8 @@ main{
   margin-right: 24px;
 }
 
+
+
 @media(max-width: 375px){
   .container{
     padding: 0 16px;
@@ -1456,6 +1493,7 @@ main{
       font-size: 24px;
       font-weight: 700;
       line-height: 32px;
+      font-family: 'Intro Bold', sans-serif;
     }
     &__descr{
       margin: 14px 0;
@@ -1661,6 +1699,7 @@ main{
     width: 100%;
     display: flex;
     flex-direction: column;
+    margin-top: 52px;
     .divine-block{
       display: flex;
     }
@@ -1943,5 +1982,4 @@ main{
       height: 56px;
     }
   }
-
 }

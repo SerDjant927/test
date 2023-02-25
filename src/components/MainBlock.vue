@@ -7,7 +7,7 @@
         <p class="main-block__descr">
           We make delivery exactly at the time you need - we can start to fulfill the order a few minutes after it arrives, or we can deliver on a specific day and hour.
         </p>
-        <a href="javascript:void(0);" class="main-block__btn">
+        <a href="#" class="main-block__btn">
           <span>Read more</span>
           <svg width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M4.72351 3.30468L1.61047 0.269411C1.24206 -0.0898037 0.644732 -0.0898037 0.276314 0.269411C-0.0921045 0.628626 -0.0921046 1.21103 0.276314 1.57024L2.76841 4.00008L0.276486 6.42976C-0.0919318 6.78897 -0.0919317 7.37137 0.276486 7.73059C0.644904 8.0898 1.24223 8.0898 1.61065 7.73059L4.72369 4.69531C4.92006 4.50384 5.01177 4.24896 4.99879 3.99827C5.01075 3.74869 4.91899 3.49527 4.72351 3.30468Z" fill="#2B6BF3"/>
@@ -21,12 +21,12 @@
           </div>
         </div>
       </div>
-      <div class="main-block">
+      <div class="main-block main-block_tabs">
         <div class="tabs-block">
           <div class="tabs-block__up">
             <h3 class="tabs-block__headline">Send a Parcel</h3>
             <div class="tooltip-block">
-              <a href="javascript:void(0);" class="tooltip js-tooltip">
+              <a href="#" class="tooltip js-tooltip">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <circle cx="12" cy="12" r="12" fill="#DDE7FD"/>
                   <path d="M11 11C11 10.4477 11.4477 10 12 10C12.5523 10 13 10.4477 13 11V17C13 17.5523 12.5523 18 12 18C11.4477 18 11 17.5523 11 17V11Z" fill="white"/>
@@ -42,7 +42,7 @@
           <div  class="tabs-block__main">
             <form action="" class="tabs-form js-tabs-container">
               <div class="tabs-form__btns">
-                <a @click="setActiveTab('tab1')" href="javascript:void(0);" class="tabs-btn js-tab-btn">
+                <span @click="setActiveTab('tab1')" class="tabs-btn js-tab-btn">
                   <div class="tabs-btn__block">
                     <div class="tabs-btn__img tabs-btn__img_double">
                       <svg width="30" height="20" viewBox="0 0 30 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -65,8 +65,8 @@
                     </div>
                     <div class="tabs-btn__text">up to 10lb</div>
                   </div>
-                </a>
-                <a @click="setActiveTab('tab2')" href="javascript:void(0);" class="tabs-btn tabs-btn_active js-tab-btn">
+                </span>
+                <span @click="setActiveTab('tab2')" class="tabs-btn tabs-btn_active js-tab-btn">
                   <div class="tabs-btn__block">
                     <div class="tabs-btn__img">
                       <svg width="48" height="30" viewBox="0 0 48 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -79,8 +79,8 @@
                     </div>
                     <div class="tabs-btn__text">up to 130lb</div>
                   </div>
-                </a>
-                <a @click="setActiveTab('tab3')" href="javascript:void(0);" class="tabs-btn js-tab-btn">
+                </span>
+                <span @click="setActiveTab('tab3')" class="tabs-btn js-tab-btn">
                   <div class="tabs-btn__block">
                     <div class="tabs-btn__img">
                       <svg width="38" height="26" viewBox="0 0 38 26" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -93,7 +93,7 @@
                     </div>
                     <div class="tabs-btn__text">up to 130lb</div>
                   </div>
-                </a>
+                </span>
               </div>
               <div class="tabs-form__content">
                 <div v-if="activeTab === 'tab1'" class="tabs-form__block">
@@ -133,10 +133,10 @@
                     </div>
                   </div>
                   <div class="submit-block">
-                    <a href="javascript:void(0);" class="submit-block__btn">
+                    <a href="#" class="submit-block__btn">
                       <span>Order</span>
                     </a>
-                    <a @click="resetInput" href="javascript:void(0);" class="submit-block__btn submit-block__btn_transparent">
+                    <a @click="resetInput" href="#" class="submit-block__btn submit-block__btn_transparent">
                       <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M0.276314 0.269411C-0.0921045 0.628626 -0.0921046 1.21103 0.276314 1.57024L2.76841 4.00008L0.276486 6.42976C-0.0919318 6.78897 -0.0919317 7.37137 0.276486 7.73059C0.644904 8.0898 1.24223 8.0898 1.61065 7.73059L4 5.40092L6.38935 7.73059C6.75777 8.0898 7.3551 8.0898 7.72351 7.73059C8.09193 7.37137 8.09193 6.78897 7.72351 6.42976L5.23159 4.00008L7.72369 1.57024C8.0921 1.21103 8.0921 0.628626 7.72369 0.269411C7.35527 -0.0898037 6.75794 -0.0898037 6.38953 0.269411L4 2.59924L1.61047 0.269411C1.24206 -0.0898037 0.644732 -0.0898037 0.276314 0.269411Z" fill="#C4C4C4"/>
                       </svg>
@@ -156,7 +156,7 @@
           <h3 class="track-block__headline">Track a package</h3>
           <label class="track-block__label" for="">
             <input type="text" placeholder="Enter code">
-            <a class="track-block__btn" href="javascript:void(0);" >
+            <a class="track-block__btn"  href="#" >
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M17.0909 10.5455C17.0909 11.9818 16.6283 13.31 15.8439 14.3894L20 18.5455L18.5455 20L14.3894 15.8439C13.31 16.6283 11.9818 17.0909 10.5455 17.0909C6.9305 17.0909 4 14.1604 4 10.5455C4 6.9305 6.9305 4 10.5455 4C14.1604 4 17.0909 6.9305 17.0909 10.5455ZM10.5 15C13 15 15 13.0909 15 10.5455C15 8 13 6 10.5455 6C8.09091 6 6 8 6 10.5455C6 13.0909 8 15 10.5 15Z" fill="#CCCCCC"/>
               </svg>
