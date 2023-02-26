@@ -29,7 +29,23 @@
     </VueSlickCarousel>
   </div>
 </template>
-
+<style lang="less">
+.slider__item{
+  cursor: pointer;
+}
+.slider__list_payments{
+  width: 1310px;
+  max-width: 100%;
+  .slider__item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: max-content!important;
+    margin-right: 112px;
+    height: 56px;
+  }
+}
+</style>
 <script>
 import VueSlickCarousel from 'vue-slick-carousel'
 import 'vue-slick-carousel/dist/vue-slick-carousel.css'
@@ -46,7 +62,7 @@ export default {
     return {
       settings: {
         "infinite": true,
-        "centerMode": true,
+        "centerMode": false,
         "dots":false,
         "centerPadding": "0px",
         "slidesToShow": 1,

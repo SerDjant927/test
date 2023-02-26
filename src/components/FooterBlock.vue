@@ -17,62 +17,65 @@
               <span class="footer-columns__text">Express delivery of documents and parcels for organizations, express delivery of correspondence, purchases and other goods</span>
             </div>
           </div>
-          <div class="footer-columns__block">
-            <h5 class="footer-columns__headline">Menu</h5>
-            <div class="footer-columns__elem">
-              <ul class="footer-columns__link-list">
-                <li class="footer-columns__link-item">
-                  <a href="javascript:void(0);" class="footer-columns__link">About company</a>
-                </li>
-                <li class="footer-columns__link-item">
-                  <a href="javascript:void(0);" class="footer-columns__link">Contact</a>
-                </li>
-                <li class="footer-columns__link-item">
-                  <a href="javascript:void(0);" class="footer-columns__link">Rules</a>
-                </li>
-                <li class="footer-columns__link-item">
-                  <a href="javascript:void(0);" class="footer-columns__link">FAQ</a>
-                </li>
-                <li class="footer-columns__link-item">
-                  <a href="javascript:void(0);" class="footer-columns__link">Reviews</a>
-                </li>
-                <li class="footer-columns__link-item">
-                  <a href="javascript:void(0);" class="footer-columns__link">Cargo transportation</a>
-                </li>
-                <li class="footer-columns__link-item">
-                  <a href="javascript:void(0);" class="footer-columns__link">Tariffs</a>
-                </li>
-              </ul>
+          <div class="footer-columns__container">
+            <div class="footer-columns__block">
+              <h5 class="footer-columns__headline">Menu</h5>
+              <div class="footer-columns__elem">
+                <ul class="footer-columns__link-list">
+                  <li class="footer-columns__link-item">
+                    <a href="#" class="footer-columns__link">About company</a>
+                  </li>
+                  <li class="footer-columns__link-item">
+                    <a href="#" class="footer-columns__link">Contact</a>
+                  </li>
+                  <li class="footer-columns__link-item">
+                    <a href="#" class="footer-columns__link">Rules</a>
+                  </li>
+                  <li class="footer-columns__link-item">
+                    <a href="#" class="footer-columns__link">FAQ</a>
+                  </li>
+                  <li class="footer-columns__link-item">
+                    <a href="#" class="footer-columns__link">Reviews</a>
+                  </li>
+                  <li class="footer-columns__link-item">
+                    <a href="#" class="footer-columns__link">Cargo transportation</a>
+                  </li>
+                  <li class="footer-columns__link-item">
+                    <a href="#" class="footer-columns__link">Tariffs</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer-columns__block">
+              <h5 class="footer-columns__headline">Services</h5>
+              <div class="footer-columns__elem">
+                <ul class="footer-columns__link-list">
+                  <li class="footer-columns__link-item">
+                    <a href="#" class="footer-columns__link">Online stores</a>
+                  </li>
+                  <li class="footer-columns__link-item">
+                    <a href="#" class="footer-columns__link">Legal entity</a>
+                  </li>
+                  <li class="footer-columns__link-item">
+                    <a href="#" class="footer-columns__link">API Integration</a>
+                  </li>
+                  <li class="footer-columns__link-item">
+                    <a href="#" class="footer-columns__link">FAQ</a>
+                  </li>
+                  <li class="footer-columns__link-item">
+                    <a href="#" class="footer-columns__link">Reviews</a>
+                  </li>
+                  <li class="footer-columns__link-item">
+                    <a href="#" class="footer-columns__link">Cargo transportation</a>
+                  </li>
+                  <li class="footer-columns__link-item">
+                    <a href="#" class="footer-columns__link">Tariffs</a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
-          <div class="footer-columns__block">
-            <h5 class="footer-columns__headline">Services</h5>
-            <div class="footer-columns__elem">
-              <ul class="footer-columns__link-list">
-                <li class="footer-columns__link-item">
-                  <a href="javascript:void(0);" class="footer-columns__link">Online stores</a>
-                </li>
-                <li class="footer-columns__link-item">
-                  <a href="javascript:void(0);" class="footer-columns__link">Legal entity</a>
-                </li>
-                <li class="footer-columns__link-item">
-                  <a href="javascript:void(0);" class="footer-columns__link">API Integration</a>
-                </li>
-                <li class="footer-columns__link-item">
-                  <a href="javascript:void(0);" class="footer-columns__link">FAQ</a>
-                </li>
-                <li class="footer-columns__link-item">
-                  <a href="javascript:void(0);" class="footer-columns__link">Reviews</a>
-                </li>
-                <li class="footer-columns__link-item">
-                  <a href="javascript:void(0);" class="footer-columns__link">Cargo transportation</a>
-                </li>
-                <li class="footer-columns__link-item">
-                  <a href="javascript:void(0);" class="footer-columns__link">Tariffs</a>
-                </li>
-              </ul>
-            </div>
-          </div>
+
           <div class="footer-columns__block">
             <h5 class="footer-columns__headline">Contact us</h5>
             <div class="footer-columns__elem">
@@ -90,16 +93,16 @@
               </div>
             </div>
             <div class="footer-columns__social socials">
-              <a href="javascript:void(0);" class="socials__link">
+              <a href="#" class="socials__link">
                 <img src="../assets/f.svg" alt="facebook">
               </a>
-              <a href="javascript:void(0);" class="socials__link">
+              <a href="#" class="socials__link">
                 <img src="../assets/vk.svg" alt="vkontakte">
               </a>
-              <a href="javascript:void(0);" class="socials__link">
+              <a href="#" class="socials__link">
                 <img src="../assets/youtube.svg" alt="youtube">
               </a>
-              <a href="javascript:void(0);" class="socials__link">
+              <a href="#" class="socials__link">
                 <img src="../assets/inst.svg" alt="instagram">
               </a>
             </div>
@@ -134,7 +137,7 @@
                 </defs>
               </svg>
             </a>
-            <a href="javascript:void(0);" class="policy">
+            <a href="#" class="policy">
               <svg width="10" height="13" viewBox="0 0 10 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M9.99643 6.87252V1.53567C5.99609 3 4.99609 5.98356e-05 4.99609 5.98356e-05L4.99956 0C4.99609 5.98356e-05 4.99609 5.98356e-05 4.99609 5.98356e-05C4.99609 5.98356e-05 3.99609 3 0.00329978 1.53567L0.00268884 6.87252C-0.0113473 7.1462 -0.0253834 8.87953 1.49052 10.6281C2.20636 11.4491 3.45212 12.3158 4.99609 13C6.82079 12.1942 8.17173 11.145 8.87354 10.1871C10.0385 8.59064 10.0105 7.11579 9.99643 6.87252Z" fill="#85AAF8"/>
               </svg>
@@ -149,7 +152,7 @@
     </div>
     <div class="container">
       <div class="footer_mobile-block">
-        <a href=" javascript:void(0);" class="policy">
+        <a href="#" class="policy">
           <svg width="10" height="13" viewBox="0 0 10 13" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M9.99643 6.87252V1.53567C5.99609 3 4.99609 5.98356e-05 4.99609 5.98356e-05L4.99956 0C4.99609 5.98356e-05 4.99609 5.98356e-05 4.99609 5.98356e-05C4.99609 5.98356e-05 3.99609 3 0.00329978 1.53567L0.00268884 6.87252C-0.0113473 7.1462 -0.0253834 8.87953 1.49052 10.6281C2.20636 11.4491 3.45212 12.3158 4.99609 13C6.82079 12.1942 8.17173 11.145 8.87354 10.1871C10.0385 8.59064 10.0105 7.11579 9.99643 6.87252Z" fill="#85AAF8"/>
           </svg>
@@ -185,7 +188,412 @@
 
   </footer>
 </template>
+<style lang="less">
+.footer{
+  padding:90px 0 56px;
+  width: 100%;
+  background-color: #F8FAFF;
+}
 
+.footer-columns{
+  //display: grid;
+  //grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: space-between;
+  display: flex;
+  //column-gap: 60px;
+  flex-wrap: nowrap;
+  &__headline{
+    margin: 0;
+    padding-bottom: 9px;
+    position: relative;
+    font-family: 'Intro Bold', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    text-transform: uppercase;
+    display: flex;
+    margin-bottom: 21px;
+    letter-spacing: 0.08em;
+    &:after{
+      content: '';
+      bottom: 0px;
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      background:linear-gradient(0deg, #B7C6E7, #B7C6E7), #C2D2F4;
+      border-radius: 1px;
+    }
+  }
+  &__text{
+    font-family: 'Intro Book', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #1D253C;
+    opacity: 0.64;
+    width: 240px;
+    max-width: 100%;
+    position: relative;
+    top: 3px;
+  }
+  &__block{
+    display: flex;
+    flex-direction: column;
+    &:first-of-type{
+      .footer-columns__headline{
+        padding-left: 61px;
+        &:after{
+          display: none;
+        }
+      }
+    }
+  }
+  &__elem{
+    &_grid{
+      display: grid;
+      grid-template-columns: 46px 1fr;
+      column-gap: 16px;
+    }
+  }
+  &__tel-link{
+    font-family: 'Intro Bold', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #1D253C;
+  }
+  &__link-list{
+    padding:0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+  }
+  &__link-item{
+    font-family: 'Intro Book', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  &__link{
+    color: #1D253C;
+    opacity: 0.64;
+  }
+}
+
+.socials{
+  margin-top: 58px;
+  display: flex;
+  align-items: center;
+  column-gap: 24px;
+  flex-wrap: nowrap;
+  &__link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2B6BF3;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+  }
+}
+
+.address{
+  margin-top: 24px;
+  display: grid;
+  grid-template-columns: 16px 1fr;
+  column-gap: 12px;
+  &__block{
+    font-family: 'Intro Book', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #1D253C;
+    opacity: 0.64;
+    svg{
+      position: relative;
+      top: 2px;
+    }
+  }
+}
+.divine-block{
+  display: flex;
+  width: 100%;
+  position: relative;
+  margin-top: 7px;
+  align-items: center;
+  justify-content: center;
+  &__line{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 2px;
+    background: linear-gradient(0deg, #B7C6E7, #B7C6E7), #C2D2F4;
+    opacity: 0.72;
+  }
+  &__text{
+    font-family: "Intro Book", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #C2D2F4;
+    position: relative;
+    z-index: 2;
+    padding: 14px;
+    background-color: #F8FAFF;
+  }
+}
+
+.footer-policy-block{
+  width: 1012px;
+  max-width: 100%;
+  margin-top: -3px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  .copyright{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #1D253C;
+    opacity: 0.64;
+    display: flex;
+    height: max-content;
+    position: absolute;
+    left: 0;
+  }
+  .developer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+  }
+  .policy{
+    position: absolute;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: max-content;
+    column-gap: 13px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #1D253C;
+    span{
+      opacity: 0.64;
+    }
+  }
+}
+.footer-columns__container{
+  display: flex;
+  width: 469px;
+  max-width: 100%;
+  justify-content: space-between;
+}
+.footer-columns__container .footer-columns__block .footer-columns__headline:after{
+  content: '';
+  bottom: 0px;
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(0deg, #B7C6E7, #B7C6E7), #C2D2F4;
+  border-radius: 1px;
+}
+.footer-columns__container .footer-columns__block:first-of-type .footer-columns__headline{
+  padding-left: 0;
+}
+.footer-columns__container .footer-columns__block{
+  width: 200px;
+}
+.footer-columns__block:last-of-type .footer-columns__headline{
+  max-width: 200px;
+}
+.footer-content{
+  width: 100%;
+}
+@media(max-width: 1366px){
+  .container{
+    width: 100%;
+    padding: 0 32px;
+    &_main{
+      padding-top: 36px;
+    }
+  }
+}
+@media(max-width: 375px){
+  .container{
+    padding: 0 16px;
+    &_partners{
+      margin-bottom: 48px;
+    }
+  }
+  .slider__item{
+    position: relative;
+  }
+  .demo-slider .slider__list .slider__item{
+    height: 200px;
+  }
+  .dividing-block{
+    padding: 62px 0;
+  }
+  .what-we-do-img{
+    display: none;
+  }
+  .global-title{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    text-align: center;
+  }
+  .payment .slider__list{
+    column-gap: 64px;
+  }
+  .footer{
+    padding: 44px 0;
+  }
+  .footer-content{
+    overflow: hidden;
+  }
+  .footer-columns{
+    row-gap: 32px;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 0;
+    &__block{
+      &:nth-child(1){
+        width: 100%;
+      }
+      &:nth-child(2){
+        width: calc(50% - 8px)
+      }
+      &:nth-child(3){
+        width: calc(50% - 8px)
+      }
+      &:nth-child(4){
+        width: 100%;
+      }
+    }
+  }
+  .socials{
+    justify-content: space-around;
+    width: 266px;
+    max-width: 100%;
+    column-gap: unset;
+    margin-top: 26px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .address__block{
+    br{
+      display: none;
+    }
+  }
+  .divine-block{
+    display: none;
+  }
+  .footer-policy-block .copyright{
+    display: none;
+  }
+  .footer-policy-block .developer{
+    display: none;
+  }
+  .footer-policy-block .policy{
+    display: none;
+  }
+  .footer_mobile-block{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 52px;
+    .divine-block{
+      display: flex;
+    }
+    .copyright{
+      display: block;
+      position: static;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 24px;
+      margin-top: 24px;
+      text-align: center;
+      opacity: 0.64;
+    }
+    .developer{
+      display: flex;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .policy{
+      position: static;
+      right: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: max-content;
+      column-gap: 13px;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 24px;
+      color: #1D253C;
+    }
+  }
+  .container_info{
+    margin-top: 54px;
+  }
+  .slider__list_video, .slider__item_video{
+    width: 328px;
+    max-width: calc(100vw - 32px);
+  }
+  .slider__list_payments{
+    width: 1310px;
+    max-width: 100%;
+    .slider__item{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: max-content!important;
+      margin-right: 64px;
+      height: 56px;
+    }
+  }
+  .container_header_mobile, .header{
+    height: 64px;
+  }
+}
+@media(max-width: 375px){
+
+  .footer-columns__block:last-of-type .footer-columns__headline{
+    max-width: 100%;
+  }
+
+  .footer-columns__block:last-of-type .footer-columns__elem{
+    max-width: 100%;
+  }
+
+  .footer-columns__container .footer-columns__block{
+    width: calc(50% - 8px);
+  }
+  .footer-columns__block:nth-child(3){
+    width: 100%;
+  }
+}
+</style>
 <script>
 export default {
   name: 'FooterBlock',

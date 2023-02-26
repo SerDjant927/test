@@ -1,22 +1,22 @@
 <template>
   <div>
     <VueSlickCarousel :arrows="true" :dots="true" v-bind="settings">
-      <a href="javascript:void(0);" class="slider__item slider__item_video">
+      <div class="slider__item slider__item_video">
         <img src="../assets/slider-video.png" alt="slider-img">
         <img src="../assets/play-btn.svg" alt="play-btn" class="play-btn">
-      </a>
-      <a href="javascript:void(0);" class="slider__item slider__item_video">
+      </div>
+      <div class="slider__item slider__item_video">
         <img src="../assets/slider-video.png" alt="slider-img">
         <img src="../assets/play-btn.svg" alt="play-btn" class="play-btn">
-      </a>
-      <a href="javascript:void(0);" class="slider__item slider__item_video">
+      </div>
+      <div class="slider__item slider__item_video">
         <img src="../assets/slider-video.png" alt="slider-img">
         <img src="../assets/play-btn.svg" alt="play-btn" class="play-btn">
-      </a>
-      <a href="javascript:void(0);" class="slider__item slider__item_video">
+      </div>
+      <div class="slider__item slider__item_video">
         <img src="../assets/slider-video.png" alt="slider-img">
         <img src="../assets/play-btn.svg" alt="play-btn" class="play-btn">
-      </a>
+      </div>
       <a  class="slider__item slider__item_video">
         <img src="../assets/slider-video.png" alt="slider-img">
         <img src="../assets/play-btn.svg" alt="play-btn" class="play-btn">
@@ -25,7 +25,11 @@
     </VueSlickCarousel>
   </div>
 </template>
-
+<style scoped>
+.slider__item_video{
+  cursor: pointer;
+}
+</style>
 <script>
 import VueSlickCarousel from 'vue-slick-carousel'
 import 'vue-slick-carousel/dist/vue-slick-carousel.css'

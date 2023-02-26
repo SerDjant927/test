@@ -3,7 +3,6 @@
     <HeaderBlock>
     </HeaderBlock>
     <main>
-
       <MainBlock></MainBlock>
       <infoBlock></infoBlock>
       <PartnersBlock></PartnersBlock>

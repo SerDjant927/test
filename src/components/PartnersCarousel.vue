@@ -1,31 +1,31 @@
 <template>
   <div>
     <VueSlickCarousel :arrows="true" :dots="true" v-bind="settings">
-      <a href="javascript:void(0);" class="slider__item slider__item_partners">
+      <a href="#" class="slider__item slider__item_partners">
         <img src="../assets/partners.png" alt="slider-img">
         <img src="../assets/partners_light.svg" alt="slider-img">
       </a>
-      <a href="javascript:void(0);" class="slider__item slider__item_partners">
+      <a href="#" class="slider__item slider__item_partners">
         <img src="../assets/partners.png" alt="slider-img">
         <img src="../assets/partners_light.svg" alt="slider-img">
       </a>
-      <a href="javascript:void(0);" class="slider__item slider__item_partners">
+      <a href="#" class="slider__item slider__item_partners">
         <img src="../assets/partners.png" alt="slider-img">
         <img src="../assets/partners_light.svg" alt="slider-img">
       </a>
-      <a href="javascript:void(0);" class="slider__item slider__item_partners">
+      <a href="#" class="slider__item slider__item_partners">
         <img src="../assets/partners.png" alt="slider-img">
         <img src="../assets/partners_light.svg" alt="slider-img">
       </a>
-      <a href="javascript:void(0);" class="slider__item slider__item_partners">
+      <a href="#" class="slider__item slider__item_partners">
         <img src="../assets/partners.png" alt="slider-img">
         <img src="../assets/partners_light.svg" alt="slider-img">
       </a>
-      <a href="javascript:void(0);" class="slider__item slider__item_partners">
+      <a href="#" class="slider__item slider__item_partners">
         <img src="../assets/partners.png" alt="slider-img">
         <img src="../assets/partners_light.svg" alt="slider-img">
       </a>
-      <a href="javascript:void(0);" class="slider__item slider__item_partners">
+      <a href="#" class="slider__item slider__item_partners">
         <img src="../assets/partners.png" alt="slider-img">
         <img src="../assets/partners_light.svg" alt="slider-img">
       </a>

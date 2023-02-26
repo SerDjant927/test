@@ -55,7 +55,7 @@
                   fill="#2B6BF3"/>
             </svg>
           </div>
-          <h5 class="collab-demo__title">Online <a href="javascript:void(0);">calculation</a></h5>
+          <h5 class="collab-demo__title">Online <a href="#">calculation</a></h5>
           <p class="collab-demo__text">Instant calculation of the cost in the order form, the price is updated in the
             process of filling out the form</p>
         </div>
@@ -82,20 +82,229 @@
           <h5 class="collab-demo__title">Convenient payment</h5>
           <p class="collab-demo__text">
             You can pay for delivery by card or in cash at any of the order addresses. For legal entities non-cash is available.
-            <a href="javascript:void(0);" class="collab-demo__link">
+            <a href="#" class="collab-demo__link">
 
             </a>
           </p>
         </div>
       </div>
-      <a href="javascript:void(0);" class="collab-block__btn">Get started!</a>
+      <a href="#" class="collab-block__btn">Get started!</a>
 
 
 
     </div>
   </div>
 </template>
+<style lang="less">
+.what-we-do-img{
+  position: absolute;
+  height: 504px;
+  width: 220px;
+  top: -80px;
+  right: -40px;
+  img{
+  }
+}
 
+.collab-block{
+  padding: 72px 0;
+  width: 1000px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  min-height: 640px;
+  &__headline{
+    text-align: center;
+  }
+  &__subtitle{
+    width: 754px;
+    max-width: 100%;
+    margin-bottom: 0;
+    margin-top: 29px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Intro Book', sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 32px;
+  }
+  &__list{
+    margin-top: 39px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 50px;
+  }
+  &__element{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+  &__btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-family: 'Intro Book', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+    color: #1D253C;
+    height: 48px;
+    width: 296px;
+    max-width: 100%;
+    padding: 8px;
+    background-color: #FFDD2D;
+    border-radius: 32px;
+    margin: 36px auto 0;
+    &:hover{
+      color: #fff;
+    }
+  }
+}
+
+.collab-demo{
+  &__img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    background-color: #fff;
+    width: 80px;
+    height: 80px;
+    box-shadow: 0px 8px 16px 0px #2B6BF329;
+  }
+  &__title{
+    margin: 31px 0 0 0;
+    font-family: 'Intro Book', sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 32px;
+    color: #1D253C;
+    a{
+      color: #2B6BF3;
+      text-decoration: underline;
+    }
+  }
+  &__text{
+    color: #666;
+    font-family: 'Intro Book', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 20px 0 0 0;
+    position: relative;
+  }
+  &__link{
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    height: 16px;
+    width: 16px;
+    border-radius: 100%;
+    background-color: #2B6BF324;
+    background-image: url("../assets/link-arrow.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    top: 2px;
+  }
+}
+
+.payment{
+  padding-top: 98px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  .slick-dots{
+    display: none!important;
+  }
+  .slider__list{
+  }
+  &__slider{
+    width: 100%;
+    margin-top: 46px;
+    position: relative;
+    .slider__navs{
+      position: absolute;
+      width: 100%;
+      z-index: -1;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin:auto 0;
+      display: flex;
+      justify-content: space-between;
+      .slider__arrow{
+        display: flex;
+        width: 24px;
+        height: 24px;
+        align-items: center;
+        justify-content: center;
+        margin: auto 0;
+      }
+    }
+  }
+  button.slick-prev:before, button.slick-next:before {
+
+    background: url("../assets/arrow.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    height: 24px;
+    width: 24px;
+    content: ''!important;
+  }
+  button.slick-next:before{
+    transform: rotate(180deg);
+  }
+  .slick-prev{
+    left: -50px;
+  }
+  .slick-next{
+    right: -50px;
+  }
+}
+@media(max-width: 375px){
+  .collab-block{
+    padding: 54px 0;
+    &__headline{
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 32px;
+    }
+    &__subtitle{
+      opacity: 0.48;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 32px;
+      margin-top: 11px;
+      text-align: center;
+    }
+    &__list{
+      grid-template-columns: 1fr;
+      margin-top: 31px;
+      align-items: center;
+      justify-content: center;
+      row-gap: 36px;
+    }
+    &__element{
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  .collab-demo{
+    &__text{
+      color: #666;
+      text-align: center;
+    }
+  }
+}
+</style>
 <script>
 export default {
   name: 'WhatWeDo',

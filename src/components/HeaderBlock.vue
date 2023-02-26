@@ -6,20 +6,20 @@
           <img src="../assets/logo.svg" alt="logo" title="Whoosh">
         </a>
         <div class="location">
-          <a href="javascript:void(0);" class="location__btn js-location">
+          <div class="location__btn js-location">
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M13 6C13 6.57825 12.721 7.43892 12.1734 8.50282C11.6424 9.53439 10.9235 10.6362 10.1881 11.6588C9.45537 12.6777 8.72044 13.5984 8.1676 14.2653C8.10961 14.3353 8.05367 14.4024 8 14.4665C7.94633 14.4024 7.89039 14.3353 7.8324 14.2653C7.27956 13.5984 6.54463 12.6777 5.81186 11.6588C5.07648 10.6362 4.3576 9.53439 3.82663 8.50282C3.27902 7.43892 3 6.57825 3 6C3 3.23858 5.23858 1 8 1C10.7614 1 13 3.23858 13 6Z" stroke="#C2D2F4" stroke-width="2"/>
               <path d="M13 6C13 6.57825 12.721 7.43892 12.1734 8.50282C11.6424 9.53439 10.9235 10.6362 10.1881 11.6588C9.45537 12.6777 8.72044 13.5984 8.1676 14.2653C8.10961 14.3353 8.05367 14.4024 8 14.4665C7.94633 14.4024 7.89039 14.3353 7.8324 14.2653C7.27956 13.5984 6.54463 12.6777 5.81186 11.6588C5.07648 10.6362 4.3576 9.53439 3.82663 8.50282C3.27902 7.43892 3 6.57825 3 6C3 3.23858 5.23858 1 8 1C10.7614 1 13 3.23858 13 6Z" stroke="#B7C6E7" stroke-width="2"/>
             </svg>
             <span>NY, Manhattan</span>
 
-          </a>
+          </div>
         </div>
       </div>
       <div class="header__block header__block_tracker">
         <form action="" class="header-tracker">
           <input type="text" class="header-tracker__input" placeholder="Track a Package">
-          <a href="javascript:void(0);" class="header-tracker__btn">
+          <span class="header-tracker__btn">
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M7 14C10.866 14 14 10.866 14 7C14 3.13401 10.866 0 7 0C3.13401 0 0 3.13401 0 7C0 10.866 3.13401 14 7 14ZM7 12.6667C10.2217 12.6667 12.6667 10.2217 12.6667 7C12.6667 3.77834 10.2217 1.33333 7 1.33333C3.77834 1.33333 1.33333 3.77834 1.33333 7C1.33333 10.2217 3.77834 12.6667 7 12.6667Z" fill="#B7C6E7"/>
               <path d="M7.33325 10L10.6666 8.66667V5.33333L7.33325 6.51254V10Z" fill="#B7C6E7"/>
@@ -27,13 +27,13 @@
               <path d="M6.99992 3.33333L3.33325 4.66667L6.99992 6L10.6666 4.66667L6.99992 3.33333Z" fill="#B7C6E7"/>
               <path d="M11.9523 11L16 15.0477L15.0477 16L11 11.9523L11.9523 11Z" fill="#B7C6E7"/>
             </svg>
-          </a>
+          </span>
         </form>
       </div>
       <div class="header__block header__block_personal">
-        <a href="javascript:void(0);" class="personal-link personal-link_text">Send a Parcel</a>
-        <a href="javascript:void(0);" class="personal-link personal-link_text">Become a Courier</a>
-        <a href="javascript:void(0);" class="personal-link personal-link_btn">
+        <a href="#" class="personal-link personal-link_text">Send a Parcel</a>
+        <a href="#" class="personal-link personal-link_text">Become a Courier</a>
+        <a href="#" class="personal-link personal-link_btn">
           <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M8 2C6.02756 2 4 3.67893 4 5.75V7H3.71429C3.3198 7 3 7.33579 3 7.75V13.25C3 13.6642 3.3198 14 3.71429 14H12.2857C12.6802 14 13 13.6642 13 13.25V7.75C13 7.33579 12.6802 7 12.2857 7H12V5.75C12 3.67893 9.97244 2 8 2ZM8 4C6.81653 4 6 5 6 5.75V7H10V5.75C10 5 9.18347 4 8 4Z" fill="white"/>
           </svg>
@@ -68,22 +68,359 @@
           </svg>
         </a>
 
-<!--        <a href="javascript:void(0);" class="burger-btn js-burger-btn">-->
-<!--          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">-->
-<!--            <path d="M9 17C9 16.4477 9.44772 16 10 16H20C20.5523 16 21 16.4477 21 17C21 17.5523 20.5523 18 20 18H10C9.44772 18 9 17.5523 9 17Z" fill="#C2D2F4"/>-->
-<!--            <path d="M9 17C9 16.4477 9.44772 16 10 16H20C20.5523 16 21 16.4477 21 17C21 17.5523 20.5523 18 20 18H10C9.44772 18 9 17.5523 9 17Z" fill="#B7C6E7"/>-->
-<!--            <path d="M3 12C3 11.4477 3.44772 11 4 11H20C20.5523 11 21 11.4477 21 12C21 12.5523 20.5523 13 20 13H4C3.44772 13 3 12.5523 3 12Z" fill="#C2D2F4"/>-->
-<!--            <path d="M3 12C3 11.4477 3.44772 11 4 11H20C20.5523 11 21 11.4477 21 12C21 12.5523 20.5523 13 20 13H4C3.44772 13 3 12.5523 3 12Z" fill="#B7C6E7"/>-->
-<!--            <path d="M3 7C3 6.44772 3.44772 6 4 6H20C20.5523 6 21 6.44772 21 7C21 7.55228 20.5523 8 20 8H4C3.44772 8 3 7.55228 3 7Z" fill="#C2D2F4"/>-->
-<!--            <path d="M3 7C3 6.44772 3.44772 6 4 6H20C20.5523 6 21 6.44772 21 7C21 7.55228 20.5523 8 20 8H4C3.44772 8 3 7.55228 3 7Z" fill="#B7C6E7"/>-->
-<!--          </svg>-->
-<!--        </a>-->
+
         <BurgerBtn></BurgerBtn>
       </div>
     </div>
   </header>
 </template>
+<style lang="less">
+.header{
+  background-color: #F8FAFF;
+  display: flex;
+  width: 100%;
+  border-bottom: 1px solid #2B6BF316;
+  height: 80px;
+  &__block{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &_logo{
+      column-gap: 68px;
+      //margin-right: 169px;
+    }
+    &_tracker{
+      display: flex;
+      width: 184px;
+      //margin-right: 211px;
+      max-width: 100%;
+      height: 40px;
+    }
+  }
+}
+.header-tracker{
+  position: relative;
+  height: 100%;
+  &__input{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border:1px solid #B7C6E7;
+    padding: 12px 16px;
+    font-family: 'Intro Book', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #1D253C;
+    border-radius: 8px;
+    &::placeholder{
+      opacity: 0.56;
+    }
+    &:hover{
+      background-color: transparent;
+      &::placeholder{
+        opacity: 1;
+      }
+    }
+    &:focus{
+      background-color: #fff;
+      &::placeholder{
+        opacity: 1;
+      }
+    }
+  }
+  &__btn{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 16px;
+    width: 16px;
+    position: absolute;
+    right: 16px;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+  }
+}
+.personal-link{
+  &_text{
+    font-family: 'Intro Book', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #666666;
+    margin-right: 36px;
+    display: flex;
+    width: max-content;
+    &:nth-child(2){
+      margin-right: 32px;
+    }
+  }
+  &_btn{
+    //margin-left: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: #2B6BF3;
+  }
+}
+.location{
+  position: relative;
+  &__btn{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: max-content;
+    column-gap: 6px;
+    font-family: 'Intro Book', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #666666;
+    border-bottom: 1px solid transparent;
+    &:hover{
+      border-bottom: 1px dashed #666;
+    }
+  }
+  &__list{
+    display: none;
+    position: absolute;
+  }
+}
+@media(max-width: 375px){
+  .container.container_header.container_header_desctop{
+    display: none;
+  }
+  .container.container_header.container_header_mobile{
+    display: flex;
+  }
+  .header-mobile{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 0;
+  }
+  .logo.logo_mobile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .burger-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  .header-tracker{
+    height: 40px;
+  }
+  #sidemenu {
+    nav {
+      width: 200px;
+      // height: calc(100% - #{$headerHeight} - #{$footerHeight});
+      background: grey;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 99;
+      // box-shadow: 2px 0 3px$grey-6;
+      // overflow-y: scroll;
+    }
 
+    .sidemenu {
+      &__btn {
+        display: block;
+        width: 50px;
+        height: 50px;
+        background: grey;
+        border: none;
+        position: relative;
+        z-index: 100;
+        appearance: none;
+        cursor: pointer;
+        outline: none;
+
+        span {
+          display: block;
+          width: 20px;
+          height: 2px;
+          margin: auto;
+          background: white;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          transition: all .4s ease;
+
+          &.top {
+            transform: translateY(-8px);
+          }
+
+          &.bottom {
+            transform: translateY(8px);
+          }
+        }
+        &.active{
+          .top {
+            transform: rotate(-45deg);
+          }
+          .mid{
+            transform: translateX(-20px) rotate(360deg);
+            opacity: 0;
+          }
+          .bottom {
+            transform: rotate(45deg);
+          }
+        }
+
+      }
+
+      &__wrapper {
+        padding-top: 50px;
+      }
+
+      &__list {
+        padding-top: 50px;
+        list-style:none;
+        padding: 0;
+        margin: 0;
+      }
+
+      &__item {
+        a {
+          text-decoration: none;
+          line-height: 1.6em;
+          font-size: 1.6em;
+          padding: .5em;
+          display: block;
+          color: white;
+          transition: .4s ease;
+
+          &:hover {
+            background: lightgrey;
+            color: dimgrey;
+          }
+        }
+      }
+    }
+  }
+  .translateX-enter{
+    transform:translateX(-200px);
+    opacity: 0;
+  }
+  .translateX-enter-active,.translateX-leave-active{
+    transform-origin: top left 0;
+    transition:.2s ease;
+  }
+  .translateX-leave-to{
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+  .bm-item-list>*{
+    padding: unset!important;
+  }
+  .bm-item-list{
+    margin-left: unset!important;
+    padding: 0 16px;
+    display: flex;
+    height: 100%;
+    min-width: max-content;
+    max-height: 100vh;
+    flex-direction: column;
+  }
+  .bm-item-list>*>span{
+    color: #666!important;
+    font-weight: 400!important;
+    font-size: 16px!important;
+    line-height: 24px!important;
+  }
+  .burger-menu__link{
+    color: #666;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-top: 44px;
+    &:nth-child(1n + 2){
+      margin-top: 24px;
+    }
+  }
+  .burger-menu__order-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 48px;
+    background-color: #2B6BF3;
+    border-radius: 32px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+    margin-top: auto;
+    margin-bottom: 32px;
+  }
+  .bm-burger-button{
+    position: static;
+    background: url("../assets/burger.svg");
+    display: flex;
+    height: 24px!important;
+    width: 24px!important;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    left: unset!important;
+    right: 0px!important;
+    top: 12px!important;
+    bottom: 12px!important;
+    margin: auto 0!important;
+  }
+  .cross-style{
+    top: 17px!important;
+  }
+  .header-mobile{
+    position: relative;
+  }
+  .line-style{
+    display: none;
+  }
+  .bm-menu{
+    background-color: #ffffff!important;
+    max-width: 274px;
+    .location__btn{
+      position: absolute;
+      color: #666!important;
+      top: 20px;
+    }
+  }
+  .cross-style{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 20px;
+    right: 12px!important;
+    background: url("../assets/close.svg");
+    display: flex;
+    height: 24px;
+    width: 24px;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .bm-cross{
+    display: none;
+  }
+}
+</style>
 <script>
 
 import BurgerBtn from './BurgerBtn.vue'

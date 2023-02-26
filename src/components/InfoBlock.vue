@@ -61,7 +61,187 @@
   </div>
 
 </template>
+<style lang="less">
+.info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  &__subtitle{
+    width: 754px;
+    max-width: 100%;
+    text-align: center;
+    font-family: 'Intro Book', sans-sarif;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 32px;
+    opacity: 0.48;
+    margin: 29px 0 0;
+  }
+  &__headline{
+    margin: 0;
+    font-family: 'Intro Bold', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+    color: #1D253C;
+    br{
+      display: none;
+    }
+  }
+}
 
+.info-blocks{
+  width: 1000px;
+  max-width: 100%;
+  margin-top: 39px;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 50px;
+  &__item{
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #B7C6E7;
+    width: 100%;
+    height: 280px;
+    background-color: #F8FAFF;
+    &:hover{
+      background-color: #fff;
+    }
+  }
+}
+
+.block-item{
+  &__title{
+    font-family: 'Intro Book', sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 22px;
+    margin: 0;
+    color: #1D253C;
+  }
+  &__img{
+    display: flex;
+    height: 80px;
+    width: 80px;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 100%;
+    box-shadow: 0px 8px 16px 0px #2B6BF329;
+  }
+  &__img-block{
+    display: flex;
+    width: 100%;
+    padding-left: 8px;
+    margin-top: 17px;
+    &_bg{
+      background: url("../assets/route-bg.svg");
+      background-position: center;
+      background-position-x: 88px;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
+  &__text{
+    margin-top: auto;
+    height: 72px;
+    -ms-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    -ms-line-clamp: 3;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    display: -webkit-box;
+    display: box;
+    word-wrap: break-word;
+    -webkit-box-orient: vertical;
+    box-orient: vertical;
+    color: #666;
+    font-family: 'Intro Book', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+}
+
+.dividing-block{
+  padding: 82px 0 106px;
+  height: 32px;
+  display: flex;
+  width: 100vw;
+  position: relative;
+  &__img{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: url("../assets/divine-bg.svg");
+    background-color: #fff;
+    z-index: 2;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 28px;
+    width: 100px;
+  }
+  &__line{
+    height: 2px;
+    width: 100vw;
+    background-color: #C2D2F4;
+  }
+}
+
+@media(max-width: 375px){
+  .info{
+    &__headline{
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 32px;
+      text-align: center;
+      br{
+        display: block;
+      }
+    }
+    &__subtitle{
+      margin-top: 11px;
+      font-size: 20px;
+      line-height: 32px;
+    }
+  }
+  .info-blocks{
+    grid-template-columns: 1fr;
+    row-gap: 32px;
+  }
+  .block-item{
+    &:nth-child(1){
+      order: 1;
+    }
+    &:nth-child(2){
+      order: 3;
+    }
+    &:nth-child(3){
+      order: 2;
+    }
+    &__img-block{
+      margin-top: 23px;
+    }
+    &__text{
+      br{
+
+      }
+    }
+  }
+}
+</style>
 <script>
 export default {
   name: 'InfoBlock',

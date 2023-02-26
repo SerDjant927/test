@@ -42,7 +42,7 @@
           <div  class="tabs-block__main">
             <form action="" class="tabs-form js-tabs-container">
               <div class="tabs-form__btns">
-                <span @click="setActiveTab('tab1')" class="tabs-btn js-tab-btn">
+                <span @click="setActiveTab = 'ActiveTab1' " class="tabs-btn js-tab-btn">
                   <div class="tabs-btn__block">
                     <div class="tabs-btn__img tabs-btn__img_double">
                       <svg width="30" height="20" viewBox="0 0 30 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -66,7 +66,7 @@
                     <div class="tabs-btn__text">up to 10lb</div>
                   </div>
                 </span>
-                <span @click="setActiveTab('tab2')" class="tabs-btn tabs-btn_active js-tab-btn">
+                <span @click="setActiveTab = 'ActiveTab2' " class="tabs-btn tabs-btn_active js-tab-btn">
                   <div class="tabs-btn__block">
                     <div class="tabs-btn__img">
                       <svg width="48" height="30" viewBox="0 0 48 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -80,7 +80,7 @@
                     <div class="tabs-btn__text">up to 130lb</div>
                   </div>
                 </span>
-                <span @click="setActiveTab('tab3')" class="tabs-btn js-tab-btn">
+                <span @click="setActiveTab = 'ActiveTab3' " class="tabs-btn js-tab-btn">
                   <div class="tabs-btn__block">
                     <div class="tabs-btn__img">
                       <svg width="38" height="26" viewBox="0 0 38 26" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -96,58 +96,7 @@
                 </span>
               </div>
               <div class="tabs-form__content">
-                <div v-if="activeTab === 'tab1'" class="tabs-form__block">
-                  <h2>Tab N1</h2>
-                </div>
-                <div v-if="activeTab === 'tab2'" class="tabs-form__block tabs-form__block_active">
-                  <div class="input-container input-container_grid">
-                    <div class="input-container__elem">
-                      <div class="input-container__img">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <circle cx="12" cy="12" r="12" fill="#2B6BF3" fill-opacity="0.08"/>
-                          <circle cx="12" cy="12" r="5" fill="#2B6BF3"/>
-                          <circle cx="12" cy="12" r="2" fill="white"/>
-                        </svg>
-                      </div>
-                      <div class="input-container__img input-container__img_dots">
-                        <img src="../assets/dots-bg.png" alt="dots">
-
-                      </div>
-                      <div class="input-container__img">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M18 10C18 13.3137 12 20 12 20C12 20 6 13.3137 6 10C6 6.68629 8.68629 4 12 4C15.3137 4 18 6.68629 18 10Z" fill="#FFD600"/>
-                        </svg>
-
-                      </div>
-                    </div>
-                    <div class="input-container__elem">
-                      <label for="" class="input-container__label">
-                        <span class="input-container__descr">Pickup location</span>
-                        <input type="text" v-model="location1" placeholder="location">
-
-                      </label>
-                      <label for="" class="input-container__label">
-                        <span class="input-container__descr">Drop location</span>
-                        <input type="text" v-model="location2" placeholder="location">
-                      </label>
-                    </div>
-                  </div>
-                  <div class="submit-block">
-                    <a href="#" class="submit-block__btn">
-                      <span>Order</span>
-                    </a>
-                    <a @click="resetInput" href="#" class="submit-block__btn submit-block__btn_transparent">
-                      <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M0.276314 0.269411C-0.0921045 0.628626 -0.0921046 1.21103 0.276314 1.57024L2.76841 4.00008L0.276486 6.42976C-0.0919318 6.78897 -0.0919317 7.37137 0.276486 7.73059C0.644904 8.0898 1.24223 8.0898 1.61065 7.73059L4 5.40092L6.38935 7.73059C6.75777 8.0898 7.3551 8.0898 7.72351 7.73059C8.09193 7.37137 8.09193 6.78897 7.72351 6.42976L5.23159 4.00008L7.72369 1.57024C8.0921 1.21103 8.0921 0.628626 7.72369 0.269411C7.35527 -0.0898037 6.75794 -0.0898037 6.38953 0.269411L4 2.59924L1.61047 0.269411C1.24206 -0.0898037 0.644732 -0.0898037 0.276314 0.269411Z" fill="#C4C4C4"/>
-                      </svg>
-                      <span>Clear All</span>
-                    </a>
-                  </div>
-                </div>
-                <div v-if="activeTab === 'tab3'" class="tabs-form__block">
-                  <h2>Tab N3</h2>
-                </div>
-
+                <component :is="setActiveTab"></component>
               </div>
             </form>
           </div>
@@ -156,11 +105,11 @@
           <h3 class="track-block__headline">Track a package</h3>
           <label class="track-block__label" for="">
             <input type="text" placeholder="Enter code">
-            <a class="track-block__btn"  href="#" >
+            <span class="track-block__btn">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M17.0909 10.5455C17.0909 11.9818 16.6283 13.31 15.8439 14.3894L20 18.5455L18.5455 20L14.3894 15.8439C13.31 16.6283 11.9818 17.0909 10.5455 17.0909C6.9305 17.0909 4 14.1604 4 10.5455C4 6.9305 6.9305 4 10.5455 4C14.1604 4 17.0909 6.9305 17.0909 10.5455ZM10.5 15C13 15 15 13.0909 15 10.5455C15 8 13 6 10.5455 6C8.09091 6 6 8 6 10.5455C6 13.0909 8 15 10.5 15Z" fill="#CCCCCC"/>
               </svg>
-            </a>
+            </span>
           </label>
         </form>
       </div>
@@ -169,33 +118,601 @@
 
 
 </template>
+<style lang="less">
+.main-block{
+  &_tabs{
+    padding-top: 0;
+  }
+  &__headline{
+    font-family: 'Intro Bold', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+  }
+}
+.personal-link{
+  &_text{
+    font-family: 'Intro Book', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #666666;
+    margin-right: 36px;
+    display: flex;
+    width: max-content;
+    &:nth-child(2){
+      margin-right: 32px;
+    }
+  }
+  &_btn{
+    //margin-left: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: #2B6BF3;
+  }
+}
+main{
+  padding-bottom: 84px;
+}
+.main{
+  //padding-top: 36px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 1302px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 100%;
+  padding-left: 71px;
+  column-gap: 40px;
+  &-block{
+    display: flex;
+    flex-direction: column;
+    width: 360px;
+    max-width: 100%;
+    padding-top: 36px;
+    &:first-of-type{
+      padding-top: 20px;
+      width: 375px;
+      max-width: 100%;
+    }
+    &__headline{
+      margin:0;
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 48px;
+      color: #1D253C;
+    }
+    &__descr{
+      margin: 34px 0 34px 0;
+      font-family: 'Intro Book', sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      color: #666;
+    }
+    &__btn{
+      display: flex;
+      align-items: center;
+      column-gap: 8px;
+      font-family: 'Intro Book', sans-serif;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 24px;
+      text-decoration: none;
+      color: #2B6BF3;
+    }
+    &_tabs{
+      padding-top: 0;
+    }
+  }
+}
+.demo-slider{
+  display: flex;
+  flex-direction: column;
+  margin-top: 86px;
+  &__title{
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 32px;
+    color: #1D253C;
+    margin: 0;
+  }
+  .slider__list{
+    margin-top: 22px;
+    width: 375px;
+    max-width: 100%;
+    .slider__item{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 232px;
+      border-radius: 8px;
+      overflow: hidden;
+      position: relative;
+      img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      img.play-btn{
+        position: absolute;
+        height: 96px;
+        width: 96px;
+        margin: auto;
+        z-index: 5;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
 
+      }
+      &:hover{
+        img.play-btn{
+          position: absolute;
+          height: 96px;
+          width: 96px;
+          transform: scale(1.1);
+        }
+      }
+      &:hover{
+        .play-btn{
+          transform: scale(2);
+        }
+      }
+    }
+  }
+}
+.tabs-block{
+  display: flex;
+  flex-direction: column;
+  padding: 36px 32px 24px 32px;
+  background-color: #fff;
+  border:1px solid #B7C6E7;
+  border-radius: 8px;
+  &__up{
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+    position: relative;
+    top: -7px;
+  }
+  &__headline{
+    margin: 0;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 32px;
+    color: #1D253C;
+    font-family: "Intro Regular", sans-serif;
+    position: relative;
+  }
+}
+.tooltip-block{
+  position: relative;
+}
+.tooltip-text{
+  opacity: 0;
+  z-index: -1;
+  position: absolute;
+  pointer-events: none;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #1d253c;
+  border: 1px solid #B7C6E7;
+  box-shadow: 0px 16px 16px 0px #4963B029;
+  display: flex;
+  width: max-content;
+  height: max-content;
+  background-color: #fff;
+  max-width: 252px;
+  top: calc(100% + 8px);
+  right: calc(100% - 24px);
+}
+.tooltip{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &:hover{
+    svg{
+      circle{
+        fill:#1D253C!important
+      }
+    }
+    ~.tooltip-text{
+      opacity: 1;
+      z-index: 2;
+      pointer-events: unset;
+
+    }
+  }
+}
+.tabs-form{
+  display: flex;
+  flex-direction: column;
+  &__btns{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+  }
+}
+.tabs-btn{
+  display: flex;
+  height: 84px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  padding: 8px;
+  background-color: #EFF4FF;
+  border: 1px solid #B7C6E7;
+  &__img{
+    display: flex;
+    align-items: center;
+    height: 30px;
+    svg{
+      margin: auto;
+    }
+    &_double{
+      position: relative;
+      &:before{
+        content: '';
+        position: absolute;
+        background: url("../assets/slash.svg");
+        background-size: 100%;
+        right: -6px;
+        /* transform: translateX(-62%); */
+        top: 0;
+        bottom: 0;
+        font-size: 38px;
+        left: 0;
+        margin: auto;
+        width: 11px;
+        height: 38px;
+      }
+    }
+  }
+  &__block{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    position: relative;
+  }
+  &__text{
+    text-align: center;
+    margin-top: auto;
+    color:#1D253C;
+    opacity: 0.48;
+    font-size: 12px;
+    font-weight: 400;
+  }
+  &_active{
+    background-color: #fff;
+    .tabs-btn__text{
+      opacity: 1;
+    }
+  }
+  &:hover{
+    opacity: 0.7;
+    .tabs-btn__text{
+      opacity: 1;
+    }
+  }
+  &:first-of-type{
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+  }
+  &:last-of-type{
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+}
+.tabs-form{
+  &__block{
+    //display: none;
+    &_active{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+.input-container{
+  margin-top: 34px;
+  &__elem{
+    &:first-of-type{
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      justify-content: flex-end;
+      align-items: center;
+    }
+  }
+  &_grid{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 24px 1fr;
+    column-gap: 16px;
+    .grid-container__elem{
+      &:first-of-type{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        position: relative;
+
+      }
+    }
+  }
+  &__label{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-bottom: 2px;
+    margin-bottom: 37px;
+    row-gap: 8px;
+    &:last-of-type{
+      margin-bottom: 0;
+    }
+    &:after{
+      content: '';
+      position: absolute;
+      bottom: 0;
+      height: 4px;
+      left: 0;
+      right: 0;
+      width: 100%;
+      border-radius: 4px;
+      background-color: #2B6BF329;
+
+    }
+    input{
+      height: 24px;
+      font-family: 'Intro Book', sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      border: none;
+      &::placeholder{
+        opacity: 0.56;
+      }
+      &:hover{
+        &::placeholder{
+          opacity: 1;
+        }
+      }
+      &:focus{
+        &::placeholder{
+          opacity: 1;
+        }
+      }
+    }
+  }
+  &__descr{
+    font-family: 'Intro Book', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0.08em;
+    text-align: left;
+    color: #C4CEE5;
+    text-transform: uppercase;
+  }
+}
+.submit-block{
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  width: 100%;
+  &__btn{
+    cursor: pointer;
+    display: flex;
+    height: 48px;
+    align-items: center;
+    column-gap: 8px;
+    justify-content: center;
+    padding: 8px;
+    color: #fff;
+    font-family: 'Intro Book', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+    border-radius: 32px;
+    background-color: #2B6BF3;
+    &:hover{
+      opacity: 0.75;
+    }
+    &_transparent{
+      background-color: transparent;
+      color: #999;
+    }
+  }
+}
+.track-block{
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-top: 60px;
+  box-shadow: 0px 8px 16px 0px #00000014;
+  background-color: #FFDD2D;
+  display: flex;
+  flex-direction: column;
+  padding: 32px 40px;
+  height: max-content;
+  &__btn{
+    cursor: pointer;
+    position: absolute;
+    display: flex;
+    height: 40px;
+    width: 40px;
+    align-items: center;
+    justify-content: center;
+    right: 0px;
+    top: 0;
+    bottom: 0;
+  }
+  &__headline{
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 32px;
+    margin: 0;
+    color: #1D253C;
+  }
+  &__label{
+    margin-top: 8px;
+    border-radius: 4px;
+    overflow: hidden;
+    display: flex;
+    height: 40px;
+    position: relative;
+    input{
+
+      border-radius: 4px;
+      border:none;
+      width: 100%;
+      height: 100%;
+      background-color: #fff;
+      font-family: 'Intro Book', sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      display: flex;
+      align-items: center;
+      color:#1D253C;
+      padding: 0 40px 0 16px;
+      &::placeholder{
+        opacity: 0.32;
+      }
+      &:hover{
+        &::placeholder{
+          opacity: 1;
+        }
+      }
+      &:focus{
+        &::placeholder{
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+@media(max-width: 375px){
+   main{
+    padding-bottom: 52px;
+  }
+  .main{
+    padding-left: 0;
+    padding-top: 32px;
+    row-gap: 46px;
+  }
+  .main-block{
+    padding-top: 0;
+    &:first-of-type{
+      padding-top: 0;
+    }
+    &:nth-child(2){
+      order: 1;
+    }
+    &:nth-child(1){
+      order: 2;
+      background-repeat: no-repeat;
+      background-position: center 170px;
+      background-size: contain;
+      background-image: url("../assets/city.svg");
+    }
+    &__headline{
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 32px;
+      font-family: 'Intro Bold', sans-serif;
+    }
+    &__descr{
+      margin: 14px 0;
+    }
+  }
+  .demo-slider{
+    margin-top: 37px;
+
+  }
+  .tabs-btn{
+    height: 56px;
+    &__text{
+      display: none;
+    }
+  }
+  .track-block{
+    margin-top: 32px;
+    padding: 24px 16px;
+  }
+  .tabs-form{
+    &__btns{
+      margin-top: 28px;
+    }
+  }
+  .tooltip{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:hover{
+      ~.tooltip-text{
+        opacity: 1;
+        z-index: 2;
+        pointer-events: unset;
+        right: calc(100% - 35vw);
+      }
+    }
+  }
+  .container_main{
+    padding-bottom: 54px;
+    background-image: none;
+  }
+  .tabs-block{
+    padding: 40px 16px 24px;
+  }
+}
+</style>
 <script>
 import VideoCarousel from "@/components/VideoCarousel.vue";
-
+import ActiveTab1 from "@/components/ActiveTab1.vue";
+import ActiveTab2 from "@/components/ActiveTab2.vue";
+import ActiveTab3 from "@/components/ActiveTab3.vue";
 export default {
   name: 'MainBlock',
   components: {
     VideoCarousel,
+    ActiveTab1,
+    ActiveTab2,
+    ActiveTab3,
+
   },
   data() {
     return {
       location1: "",
       location2: "",
-      activeTab: "tab2",
+      setActiveTab: ActiveTab2,
 
     };
 
   },
 
   methods: {
-    resetInput() {
-      this.location1 = "";
-      this.location2= "";
-    },
-    setActiveTab(newTab) {
-      this.activeTab = newTab;
-    }
+    // resetInput() {
+    //   this.location1 = "";
+    //   this.location2 = "";
+    // },
+    // setActiveTab(newTab) {
+    //   this.activeTab = newTab;
+    // }
   },
 }
 

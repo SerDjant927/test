@@ -8,17 +8,83 @@
     <transition name="fade">
       <span class="show-text" v-if="show">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur ex in quam. Ad atque eius quos?</span>
     </transition>
-    <a @click="show = !show"  href="javascript:void(0);" class="etc-btn">
+    <div @click="show = !show"  class="etc-btn">
       <div class="etc-btn__dot"></div>
       <div class="etc-btn__dot"></div>
       <div class="etc-btn__dot"></div>
-    </a>
+    </div>
 
   </div>
 </template>
+<style lang="less">
+.dividing-block{
+  padding: 82px 0 106px;
+  height: 32px;
+  display: flex;
+  width: 100vw;
+  position: relative;
+  &__img{
+    position: absolute;
+    top: -7px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: url("../assets/divine-bg.svg");
+    background-color: #fff;
+    z-index: 2;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 28px;
+    width: 100px;
+  }
+  &__line{
+    height: 2px;
+    width: 100vw;
+    background-color: #C2D2F4;
+  }
+}
+.more-info-block{
+  color: #666;
+  font-family: 'Intro Book', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  position: relative;
+}
+.etc-btn{
+  display: inline-flex;
+  background-color: #CCDBFC;
+  align-items: center;
+  justify-content: center;
+  column-gap: 2px;
+  width: 25px;
+  height: 15px;
+  border-radius: 4px;
+  position: relative;
+  top: -2px;
+  left: 4px;
+  cursor: pointer;
+  &__dot{
+    height: 5px;
+    width: 5px;
+    background-color: #fff;
+    border-radius: 100%;
+  }
+}
 
 
-
+.more-info-block .show-text~.etc-btn{
+  position: absolute;
+  top:unset;
+  bottom: -20px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+</style>
 <script>
 export default {
   data() {
