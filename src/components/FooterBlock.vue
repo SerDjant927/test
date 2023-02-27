@@ -200,7 +200,7 @@
   //grid-template-columns: 1fr 1fr 1fr 1fr;
   justify-content: space-between;
   display: flex;
-  //column-gap: 60px;
+  column-gap: 60px;
   flex-wrap: nowrap;
   &__headline{
     margin: 0;
@@ -426,6 +426,9 @@
 }
 .footer-content{
   width: 100%;
+  max-width: 1160px;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media(max-width: 1366px){
   .container{

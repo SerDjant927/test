@@ -351,7 +351,7 @@ main{
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  padding: 8px;
+  padding: 8px 8px 12px;
   background-color: #EFF4FF;
   border: 1px solid #B7C6E7;
   &__img{

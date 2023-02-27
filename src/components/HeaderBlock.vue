@@ -101,6 +101,8 @@
 .header-tracker{
   position: relative;
   height: 100%;
+  left: -23px;
+  top: -2px;
   &__input{
     width: 100%;
     height: 100%;
@@ -138,7 +140,7 @@
     height: 16px;
     width: 16px;
     position: absolute;
-    right: 16px;
+    right: 10px;
     top: 0;
     bottom: 0;
     margin: auto 0;
@@ -171,6 +173,8 @@
 }
 .location{
   position: relative;
+  top: -2px;
+  left: -1px;
   &__btn{
     cursor: pointer;
     display: flex;
@@ -220,6 +224,8 @@
   }
   .header-tracker{
     height: 40px;
+    left: unset;
+    top: unset;
   }
   #sidemenu {
     nav {
